@@ -7,5 +7,5 @@ def my_collect(array)
   # end
   #
   # output
-  array
+  array.map{|el| yield el}
 end
