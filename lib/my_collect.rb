@@ -1,7 +1,8 @@
 def my_collect(array)
   output = []
-  array.each do |el|
-    output << yield el
+  i = 0
+  while i < array.length
+    output << yield array[i]
   end
 
   output
